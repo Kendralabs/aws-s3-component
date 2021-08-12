@@ -16,6 +16,7 @@
   ],
   "main": "lib/index.js",
   "scripts": {
+    "start": "node ./node_modules/ferryman/runGlobal.js",
     "pretest": "eslint lib spec spec-integration verifyCredentials.js --fix",
     "test": "mocha spec --recursive --timeout 50000",
     "integration-test": "mocha spec-integration --recursive --timeout 50000"
@@ -28,6 +29,7 @@
     "elasticio-component"
   ],
   "dependencies": {
+    "@openintegrationhub/ferryman": "^1.1.5",
     "@elastic.io/component-commons-library": "1.1.5",
     "@elastic.io/oih-standard-library": "1.1.4",
     "aws-sdk": "2.683.0",
